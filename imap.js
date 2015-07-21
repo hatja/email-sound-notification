@@ -60,7 +60,10 @@ module.exports = {
           throw err; 
         } else{ 
           imap.on('mail', function (num){ 
-            console.log("New message arrived: ", num); 
+            console.log("New message arrived: ", num);
+            var Player = require('player');
+            var player = new Player('murloc.mp3');
+            player.play(); 
           });  
         } 
       }); 

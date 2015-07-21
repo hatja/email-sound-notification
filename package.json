@@ -1,4 +1,11 @@
-"dependencies": {
+ {
+  "name": "mail-notification",
+  "version": "0.1.0",
+  "author": "Beyaty David <daud@citromail.hu>",
+  "description": "Plays sound when an email is recieved",
+  "dependencies": {
+    "express": "4.13.1",
     "imap": "0.8.14",
-    "express": "4.13.1"
+    "player": "0.5.0"
   }
+}
