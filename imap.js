@@ -77,7 +77,10 @@ module.exports = {
                 });
                 stream.once('end', function() {
                   if (info.which !== 'TEXT')
-                    //PARSEHEADER BUFFER A LÉNYEG
+                     if(inspect(Imap.parseHeader(buffer)).indexOf("@") > -1) {
+                        //ZENNÉÉÉLJ
+                        console.log('ZENEEEE');
+                      }
                                       
                     console.log('Parsed header: %s', inspect(Imap.parseHeader(buffer)));
                   else
